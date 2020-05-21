@@ -2,39 +2,56 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <form>
-      <label for="email">Email</label><input type="email" name="email" id="email" placeholder="">
-      <br>
-      <label for="title">Title</label><input type="text" name="title" id="title" placeholder="">
-      <br>
+    <form action="/submitted" method="post">
+      <label for="email">Email</label
+      ><input type="email" name="email" id="email" placeholder="" />
+      <br />
+      <label for="title">Title</label
+      ><input type="text" name="title" id="title" placeholder="" />
+      <br />
       <label for="description">Describe the bug</label>
-      <br>
-      <textarea name="description" id="description" rows="4" 
-      placeholder="A clear and concise description of what the bug is"></textarea>
-      <br>
+      <br />
+      <textarea
+        name="description"
+        id="description"
+        rows="4"
+        placeholder="A clear and concise description of what the bug is"
+      ></textarea>
+      <br />
       <label for="steps">To Reproduce</label>
-      <br>
-      <textarea name="steps" id="steps" rows="4" 
-      placeholder="Steps to reproduce the behavior"></textarea>
-      <br>
+      <br />
+      <textarea
+        name="steps"
+        id="steps"
+        rows="4"
+        placeholder="Steps to reproduce the behavior"
+      ></textarea>
+      <br />
       <label for="behavior">Expected Behavior</label>
-      <br>
-      <textarea name="behavior" id="behavior" rows="4" 
-      placeholder="A clear and concise description of what you expected to happen."></textarea>
-      <br>
+      <br />
+      <textarea
+        name="behavior"
+        id="behavior"
+        rows="4"
+        placeholder="A clear and concise description of what you expected to happen."
+      ></textarea>
+      <br />
       <label for="screenshot">Screenshot</label>
-      <input type="file" name="screenshot" id="screenshot">
-      <br>
+      <input type="file" name="screenshot" id="screenshot" />
+      <br />
       <label for="platform">Platform</label>
-      <br>
-      <textarea name="platform" id="platform" placeholder="Any information regarding OS, Device, Browser, Version"></textarea>
-      <br><br>
-      <input type="submit" name="submit" id="submit">
+      <br />
+      <textarea
+        name="platform"
+        id="platform"
+        placeholder="Any information regarding OS, Device, Browser, Version"
+      ></textarea>
+      <br /><br />
+      <input type="submit" name="submit" id="submit" />
     </form>
-
   </body>
 </html>
