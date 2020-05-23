@@ -1,4 +1,6 @@
 var request = require("request");
+var env = require("dotenv");
+env.config();
 
 module.exports = {
   make_API_call: function (url, json) {
@@ -7,7 +9,7 @@ module.exports = {
         url,
         {
           auth: {
-            bearer: "",
+            bearer: process.env.AUTH_TOKEN,
           },
           headers: { "user-agent": "node.js" },
           json: json,
